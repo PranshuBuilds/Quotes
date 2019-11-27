@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tcon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglazy"
+    tools:context=".lazy">
+    <TextView
+        android:id="@+id/lazy"
+
+        android:layout_width="242dp"
+        android:layout_height="75dp"
+        android:fontFamily="@font/beth"
+        android:gravity="center"
+        android:onClick="simpleToastClick3"
+        android:text="lazy"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <TextView
+        android:id="@+id/lazy_txt"
+        android:layout_width="266dp"
+        android:layout_height="372dp"
+        android:fontFamily="@font/robert"
+
+        android:gravity="center"
+
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/more_lazy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lazy"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <Button
+        android:id="@+id/more_lazy"
+
+        android:layout_width="238dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/stroke1"
+        android:fontFamily="@font/ubuntulight"
+        android:gravity="center"
+
+        android:text="more"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fun_txt"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="8dp"
+
+        android:background="@drawable/icon___keyboard_arrow___left___black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/more_lazy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lazy_txt"
+        app:layout_constraintVertical_bias="0.953" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/icon___whatshot___rounded_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toEndOf="@+id/more_lazy"
+        app:layout_constraintTop_toBottomOf="@+id/lazy_txt"
+        app:layout_constraintVertical_bias="0.954"
+        android:visibility="visible"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
